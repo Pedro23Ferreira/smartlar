@@ -1,0 +1,5 @@
+# dados e backups nunca vão para o repositório
+smartlar-backup-*.json
+*.json.bak
+.DS_Store
+Thumbs.db
