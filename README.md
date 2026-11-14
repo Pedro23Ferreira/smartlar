@@ -15,6 +15,14 @@ Site da **SmartLar** (Dedetização e Desratização · Serviços & Segurança) 
 
 > GitHub Pages em repositório **privado** exige plano pago do GitHub. No plano gratuito, o repositório precisa ser público para publicar.
 
+## Google Meu Negócio no site
+Sem configuração, o site mostra a nota e o total de avaliações gravados em `GOOGLE` (no fim do `index.html`). Atualize `rating`, `total` e `conferidoEm` a cada versão.
+
+Para sincronizar automaticamente (nota, total e até 3 avaliações recentes de 4–5 estrelas):
+1. No [Google Cloud Console](https://console.cloud.google.com/), crie um projeto e ative a **Places API (New)**. É preciso uma conta de faturamento; há uma cota mensal gratuita.
+2. Crie uma **chave de API** e restrinja: *Restrições de aplicativo → Referenciadores HTTP* com o endereço do site (ex.: `https://usuario.github.io/*`) e *Restrições de API → Places API (New)*.
+3. Cole a chave em `GOOGLE.apiKey`. O `placeId` é opcional (o site busca pelo nome). As respostas ficam em cache por 12 h no navegador do visitante.
+
 ## App de orçamentos
 - Abra `app/index.html` no navegador (ou pelo endereço do Pages + `/app/`).
 - Configure em **Mais → Empresa, perfis e padrões**.
@@ -30,7 +38,8 @@ Cada versão tem uma etiqueta (`git tag`) no formato `vMAIOR.MENOR.CORREÇÃO`. 
 | `v0.1.0` | App: orçamentos, clientes, dois perfis de marca, PDF e WhatsApp |
 | `v0.2.0` | App: identidade visual e PDF no modelo oficial da SmartLar |
 | `v0.3.0` | Site institucional + pedido de orçamento pelo WhatsApp; app movido para `/app` |
-| `v0.4.0` *(planejada)* | App: produtos químicos, registro de serviço, relatório + recibo |
-| `v0.5.0` *(planejada)* | App: retornos automáticos (garantia e próxima aplicação) |
-| `v0.6.0` *(planejada)* | App: assinatura na tela, fotos, checklist de ambientes e cartaz de aviso |
-| `v0.7.0` *(planejada)* | Site ↔ app: pedidos do site entram direto no app |
+| `v0.4.0` | Site: avaliações e mapa do Google Meu Negócio |
+| `v0.5.0` *(planejada)* | App: produtos químicos, registro de serviço, relatório + recibo |
+| `v0.6.0` *(planejada)* | App: retornos automáticos (garantia e próxima aplicação) |
+| `v0.7.0` *(planejada)* | App: assinatura na tela, fotos, checklist de ambientes e cartaz de aviso |
+| `v0.8.0` *(planejada)* | Site ↔ app: pedidos do site entram direto no app |

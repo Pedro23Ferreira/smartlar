@@ -2,6 +2,13 @@
 
 Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/) e [SemVer](https://semver.org/lang/pt-BR/).
 
+## [0.4.0] — 2026-11-14
+### Adicionado
+- Seção **Avaliações** com a nota do Google (4,9 · 40 avaliações em 14/11/2026), botões “Avaliar a SmartLar” e “Ver todas no Google”.
+- Selo da nota do Google no topo do site e item “Avaliações” no menu.
+- Mapa do Google Maps incorporado (sem chave).
+- Sincronização opcional via Places API (New): nota, total, até 3 avaliações recentes (4–5★) com atribuição ao Google e link direto de “escrever avaliação”; cache de 12 h.
+
 ## [0.3.0] — 2026-11-14
 ### Adicionado
 - Site institucional (`/`) com a identidade das artes: hero, as duas frentes de serviço, diferenciais, como funciona, dúvidas frequentes e rodapé.
