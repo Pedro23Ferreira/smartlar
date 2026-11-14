@@ -18,7 +18,8 @@ O histórico detalhado está no [CHANGELOG](CHANGELOG.md).
 | Etiqueta | Conteúdo |
 |---|---|
 | `v0.1.0` | Orçamentos, clientes, dois perfis de marca, PDF e WhatsApp |
-| `v0.2.0` *(planejada)* | Produtos químicos, registro de serviço, relatório + recibo |
-| `v0.3.0` *(planejada)* | Retornos automáticos (garantia e próxima aplicação) |
-| `v0.4.0` *(planejada)* | Assinatura na tela, fotos, checklist de ambientes e cartaz de aviso |
-| `v0.5.0` *(planejada)* | Integração com o site da SmartLar |
+| `v0.2.0` | Identidade visual SmartLar e PDF no modelo oficial (detalhamento, materiais com foto, garantia, à vista) |
+| `v0.3.0` *(planejada)* | Produtos químicos, registro de serviço, relatório + recibo |
+| `v0.4.0` *(planejada)* | Retornos automáticos (garantia e próxima aplicação) |
+| `v0.5.0` *(planejada)* | Assinatura na tela, fotos, checklist de ambientes e cartaz de aviso |
+| `v0.6.0` *(planejada)* | Integração com o site da SmartLar |

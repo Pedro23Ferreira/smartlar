@@ -2,6 +2,19 @@
 
 Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/) e [SemVer](https://semver.org/lang/pt-BR/).
 
+## [0.2.0] — 2026-11-14
+### Adicionado
+- Identidade visual: logo oficial embutida, cabeçalho escuro, laranja (Dedetização) e azul (Serviços & Segurança), fonte Poppins.
+- PDF no modelo oficial da SmartLar: logo em todas as páginas, tabelas Cliente / Empresa, detalhamento numerado, cláusulas com destaque em vermelho (prefixo `!`), garantia, condições de pagamento.
+- Proposta de dedetização com tabela de tipo de imóvel, foco, observação de execução, valor por serviço e validade por extenso.
+- Título do serviço (ex.: “Troca de caixa d'água”).
+- Lista de materiais com foto e quantidade; materiais usados ficam salvos com a foto para os próximos orçamentos.
+- Mão de obra + materiais separados; valor à vista por % ou valor fechado (ex.: R$ 1.800,00).
+- Botão “Duplicar” orçamento.
+### Alterado
+- Catálogo de Serviços & Segurança alinhado às artes (motor de portão residencial e industrial, troca de caixa d'água).
+- Dados salvos na v0.1.0 são migrados automaticamente.
+
 ## [0.1.0] — 2026-11-13
 ### Adicionado
 - Orçamentos com tipo de imóvel, pragas-alvo, área, itens do catálogo ou livres, desconto no PIX, parcelamento e validade.
