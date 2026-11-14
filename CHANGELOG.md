@@ -2,6 +2,15 @@
 
 Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/) e [SemVer](https://semver.org/lang/pt-BR/).
 
+## [0.3.0] — 2026-11-14
+### Adicionado
+- Site institucional (`/`) com a identidade das artes: hero, as duas frentes de serviço, diferenciais, como funciona, dúvidas frequentes e rodapé.
+- Formulário de orçamento que monta a mensagem e abre o WhatsApp (sem guardar dados no site).
+- Botão flutuante de WhatsApp, link para o Google Maps, dados estruturados (SEO local) e imagem de compartilhamento.
+- Ícones, favicon e logo em `assets/`.
+### Alterado
+- App de orçamentos movido para `/app/` (dados salvos no aparelho continuam valendo no mesmo endereço).
+
 ## [0.2.0] — 2026-11-14
 ### Adicionado
 - Identidade visual: logo oficial embutida, cabeçalho escuro, laranja (Dedetização) e azul (Serviços & Segurança), fonte Poppins.
