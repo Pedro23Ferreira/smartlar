@@ -3,19 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>SmartLar · Dedetização, Desratização e Serviços Residenciais em Brasília – DF</title>
-<meta name="description" content="SmartLar: dedetização, desratização, descupinização, desformigação e desaranhação, além de portão, fechadura eletrônica, elétrica e hidráulica em Brasília – DF. Atendimento 24 horas e orçamento sem compromisso.">
+<title>SmartLar · Dedetização 24h e Serviços Residenciais em Brasília e todo o DF</title>
+<meta name="description" content="SmartLar: dedetização, desratização, descupinização, desformigação e desaranhação, além de conserto de portão, fechadura eletrônica, elétrica e hidráulica em Brasília e no DF. Dedetização 24 horas, orçamento detalhado e garantia por escrito.">
 <meta name="theme-color" content="#0b0d12">
 <link rel="icon" href="assets/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="assets/icon-192.png">
 <meta property="og:type" content="website">
 <meta property="og:title" content="SmartLar · Dedetização e Serviços Residenciais em Brasília – DF">
-<meta property="og:description" content="Ambientes protegidos. Família tranquila. Atendimento 24 horas e orçamento sem compromisso.">
+<meta property="og:description" content="Ambientes protegidos. Família tranquila. Dedetização 24 horas, reparos com agendamento e orçamento sem compromisso.">
 <meta property="og:image" content="assets/og.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,800;1,900&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","name":"SmartLar","description":"Dedetização, desratização e serviços residenciais em Brasília – DF.","telephone":"+55-61-99607-3257","areaServed":"Brasília – DF","openingHours":"Mo-Su 00:00-23:59","hasMap":"https://maps.app.goo.gl/Riw3g8QafyqiqJe1A","image":"assets/logo.webp"}
+{"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","name":"SmartLar","description":"Dedetização, desratização e serviços residenciais em Brasília – DF.","telephone":"+55-61-99607-3257","areaServed":"Brasília – DF","openingHours":"Mo-Su 00:00-23:59","areaServed":["Brasília","Distrito Federal"],"priceRange":"$$","hasMap":"https://maps.app.goo.gl/Riw3g8QafyqiqJe1A","image":"assets/logo.webp"}
 </script>
 <style>
 :root{
@@ -25,6 +25,7 @@
   --r:18px; --max:1140px;
 }
 *{box-sizing:border-box}
+[hidden]{display:none!important}
 html{scroll-behavior:smooth;scroll-padding-top:80px}
 body{margin:0;background:var(--night);color:var(--ink);font:16px/1.6 Poppins,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 img{max-width:100%;display:block}
@@ -53,15 +54,17 @@ header.nav nav a{text-decoration:none;color:#cfd5de}
 header.nav nav a:hover{color:#fff}
 header.nav .btn{padding:10px 16px;font-size:14px;margin-left:auto}
 header.nav nav+.btn{margin-left:0}
+header.nav .btn+.btn{margin-left:0}
+@media(max-width:880px){header.nav .hide-m{display:none}}
 @media(max-width:880px){header.nav nav+.btn{margin-left:auto}}
 @media(max-width:880px){header.nav nav{display:none} header.nav .btn span{display:none}}
 
 /* hero */
-.hero{position:relative;padding:64px 0 56px;overflow:hidden}
+.hero{position:relative;padding:48px 0 48px;overflow:hidden}
 .hero::before{content:"";position:absolute;inset:-20% -10% auto auto;width:70vw;height:70vw;max-width:900px;max-height:900px;background:radial-gradient(closest-side,rgba(255,122,0,.28),transparent 70%);pointer-events:none}
 .hero::after{content:"";position:absolute;inset:auto auto -30% -20%;width:60vw;height:60vw;max-width:800px;max-height:800px;background:radial-gradient(closest-side,rgba(30,144,255,.22),transparent 70%);pointer-events:none}
-.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
-.hero h1{font-size:clamp(40px,6.4vw,78px);font-weight:900;font-style:italic;letter-spacing:-.02em;margin:14px 0 10px;text-transform:uppercase}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(32px,4.4vw,56px);font-weight:900;font-style:italic;letter-spacing:-.02em;margin:14px 0 10px;text-transform:uppercase}
 .hero h1 .l2{display:block;background:linear-gradient(180deg,#ffd08a,#ff8a00 55%,#d95b00);-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero .lead{font-size:clamp(17px,2vw,21px);letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:#d9dee6;margin:6px 0 26px}
 .hero .lead b{color:var(--orange);font-weight:700}
@@ -72,7 +75,7 @@ header.nav nav+.btn{margin-left:0}
 .badge{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:14px;padding:12px 14px;font-size:13.5px;line-height:1.3}
 .badge svg{width:30px;height:30px;color:var(--orange);flex:none}
 .badge b{display:block;font-size:15px;color:#fff}
-@media(max-width:880px){.hero .wrap{grid-template-columns:1fr}.hero .logo{max-width:340px;margin:0 auto;order:-1}.badges{grid-template-columns:1fr}}
+@media(max-width:880px){.hero{padding-top:26px}.hero .wrap{grid-template-columns:1fr;gap:18px}.hero .logo{max-width:200px;margin:0 auto;order:-1}.badges{grid-template-columns:1fr}}
 
 /* seções */
 section{padding:76px 0}
@@ -147,6 +150,107 @@ form.q .note{font-size:12.5px;color:var(--muted);margin-top:10px;text-align:cent
 .faq details[open] summary::after{content:"–"}
 .faq p{margin:0 0 14px;color:var(--muted)}
 
+/* aviso de época */
+.season{background:linear-gradient(90deg,#3a1800,#1a0b00 60%,#0b0d12);border-bottom:1px solid #4a2300;font-size:14px;text-align:center;padding:8px 44px 8px 16px;position:relative}
+.season a{color:#ffb347;font-weight:700;text-decoration:none;margin-left:6px}
+.season button{position:absolute;right:10px;top:50%;transform:translateY(-50%);background:none;border:0;color:#a5adba;font-size:20px;cursor:pointer;line-height:1}
+/* portas de entrada do topo */
+.doors{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:0 0 22px}
+.door{display:flex;gap:12px;align-items:center;padding:14px 16px;border-radius:16px;text-decoration:none;background:rgba(255,255,255,.04);border:1px solid var(--line);transition:border-color .15s,transform .15s}
+.door:hover{transform:translateY(-2px)}
+.door.or:hover{border-color:var(--orange)} .door.bl:hover{border-color:var(--blue)}
+.door .em{font-size:28px;line-height:1}
+.door b{display:block;font-size:16px;line-height:1.25}
+.door small{color:var(--muted);font-size:13px}
+.door.or small b{display:inline;color:var(--orange);font-size:13px}
+.door.bl small b{display:inline;color:var(--blue2);font-size:13px}
+.trust{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:16px;font-size:14px;color:#c8cfd9}
+.trust>span,.trust>a>span{display:inline-flex;align-items:center;gap:6px}
+.trust .stars{font-size:15px;letter-spacing:1px}
+.btn-call{background:#fff;color:#0b0d12}
+@media(max-width:560px){.doors{grid-template-columns:1fr}}
+/* qual é o problema */
+.prob-tabs{display:flex;justify-content:center;gap:8px;margin-bottom:18px;flex-wrap:wrap}
+.prob-tabs button{font:inherit;font-weight:700;padding:10px 18px;border-radius:99px;border:1px solid #2a3240;background:#0e1117;color:#dfe4ea;cursor:pointer}
+.prob-tabs button[aria-selected=true].or{background:var(--orange);border-color:var(--orange);color:#1a0b00}
+.prob-tabs button[aria-selected=true].bl{background:var(--blue);border-color:var(--blue);color:#03142b}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.tile{display:flex;flex-direction:column;align-items:flex-start;gap:8px;text-align:left;padding:16px;border-radius:16px;background:var(--card);border:1px solid var(--line);color:var(--ink);font:inherit;cursor:pointer;transition:transform .15s,border-color .15s}
+.tile:hover{transform:translateY(-3px)}
+.tile .ic{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:color-mix(in srgb,var(--c) 14%,#0b0e13);border:1px solid color-mix(in srgb,var(--c) 40%,transparent);color:var(--c)}
+.tile .ic svg{width:24px;height:24px}
+.tile b{font-size:15px;line-height:1.25}
+.tile small{color:var(--muted);font-size:12.5px;line-height:1.35}
+.tile.or{--c:var(--orange)} .tile.bl{--c:var(--blue2)}
+.tile.or:hover{border-color:var(--orange)} .tile.bl:hover{border-color:var(--blue)}
+.tile .go{margin-top:auto;font-size:12.5px;font-weight:700;color:var(--c)}
+.sos{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:start;margin-top:18px;padding:20px 22px;border-radius:20px;background:linear-gradient(135deg,#2a1100,#120a05);border:1px solid #5a2a00}
+.sos .big{font-size:42px;line-height:1}
+.sos h3{font-size:20px;margin:0 0 6px}
+.sos ol{margin:6px 0 0;padding-left:20px;color:#e6d6c6}
+.sos li{margin:4px 0}
+.sos a{color:#ffb347;font-weight:700}
+@media(max-width:560px){.sos{grid-template-columns:1fr}}
+.front .meta{display:flex;flex-wrap:wrap;gap:8px;margin:-6px 0 16px}
+.front .meta span{font-size:12.5px;font-weight:600;padding:5px 10px;border-radius:99px;background:rgba(255,255,255,.05);border:1px solid #232a36;color:#cfd5de}
+/* exemplo de orçamento */
+.ex{display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:center}
+.ex-tabs{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+.ex-tabs button{font:inherit;font-size:14px;font-weight:700;padding:8px 14px;border-radius:99px;border:1px solid #2a3240;background:#0e1117;color:#dfe4ea;cursor:pointer}
+.ex-tabs button[aria-selected=true]{background:#fff;color:#0b0d12;border-color:#fff}
+.paper{background:#fff;color:#111;border-radius:14px;padding:22px 22px 18px;box-shadow:0 30px 80px rgba(0,0,0,.55);transform:rotate(-1.2deg);font-size:12px;line-height:1.4;position:relative}
+.paper::after{content:"EXEMPLO";position:absolute;right:14px;top:14px;font-size:10px;font-weight:800;letter-spacing:.2em;color:#999;border:1px solid #ccc;padding:2px 6px;border-radius:4px}
+.paper img.pl{height:46px;margin:0 auto 6px}
+.paper .pt{text-align:center;font-weight:800;font-size:14px}
+.paper .ps{text-align:center;font-weight:700;font-size:12.5px;margin-bottom:10px}
+.paper table{width:100%;border-collapse:collapse;margin:6px 0 8px}
+.paper th{background:var(--pc);color:#000;font-size:11px;padding:3px 6px;border:1px solid #333;text-align:left}
+.paper td{border:1px solid #333;padding:3px 6px;font-size:11px}
+.paper td.c{text-align:center;width:14%}
+.paper .h{font-weight:800;margin:10px 0 2px}
+.paper .mat{display:inline-grid;place-items:center;width:28px;height:22px;background:#eef1f4;border-radius:4px;font-size:13px}
+.paper .tot{font-size:14px;font-weight:800;margin-top:8px}
+.paper .av{color:#d40000;font-weight:800}
+.paper .sig{font-family:"Brush Script MT","Segoe Script",cursive;font-size:20px;text-align:center;margin-top:6px}
+.callouts{display:grid;gap:12px;counter-reset:c}
+.callouts div{position:relative;padding:14px 16px 14px 56px;border-radius:14px;background:var(--card);border:1px solid var(--line)}
+.callouts div::before{counter-increment:c;content:counter(c);position:absolute;left:14px;top:14px;width:30px;height:30px;border-radius:9px;display:grid;place-items:center;font-weight:900;background:#fff;color:#0b0d12}
+.callouts b{display:block}
+.callouts span{color:var(--muted);font-size:14px}
+@media(max-width:880px){.ex{grid-template-columns:1fr}.paper{transform:none}}
+/* garantia */
+.guar{display:grid;grid-template-columns:auto 1fr auto;gap:24px;align-items:center;padding:28px;border-radius:24px;background:linear-gradient(135deg,#0f1a12,#0c0f15);border:1px solid #1f3a26}
+.guar .seal{width:110px;height:110px;border-radius:50%;display:grid;place-items:center;text-align:center;background:radial-gradient(circle,#1e6b45,#0f3a25);border:3px solid #39c27a;font-weight:900;font-style:italic;line-height:1.05;font-size:15px;box-shadow:0 0 40px rgba(57,194,122,.25)}
+.guar h3{font-size:24px;font-weight:800;margin-bottom:6px}
+.guar p{margin:0;color:#c9d6cd}
+.guar ul{margin:10px 0 0;padding-left:18px;color:#c9d6cd}
+@media(max-width:880px){.guar{grid-template-columns:1fr;text-align:center}.guar .seal{margin:0 auto}.guar ul{text-align:left}}
+/* preparação */
+.prep{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.prep>div{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:22px}
+.prep h3{font-size:18px;margin-bottom:10px}
+.prep ul{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.prep li{display:flex;gap:10px;color:#d4d9e1;font-size:14.5px}
+.prep li::before{content:"✓";color:var(--orange);font-weight:900}
+@media(max-width:880px){.prep{grid-template-columns:1fr}}
+/* regiões */
+.regions{margin-top:18px}
+.regions small{color:var(--muted)}
+.regions div{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.regions span{font-size:12.5px;padding:5px 10px;border-radius:99px;background:#0e1117;border:1px solid #232a36;color:#cfd5de}
+/* barra fixa no celular */
+.mbar{display:none}
+@media(max-width:880px){
+  .mbar{display:grid;grid-template-columns:1fr 1.3fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:70;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:rgba(7,8,11,.94);backdrop-filter:blur(10px);border-top:1px solid #1a1f29}
+  .mbar a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;border-radius:12px;font-weight:800;text-decoration:none}
+  .mbar .c{background:#fff;color:#0b0d12}
+  .mbar .w{background:var(--wa);color:#06210f}
+  .wa-float{display:none!important}
+  header.nav .hide-m+.btn{margin-left:auto}
+  .season{font-size:13px}
+  footer{padding-bottom:120px}
+}
+
 /* avaliações */
 .rv-top{display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center;background:linear-gradient(135deg,#141922,#0c0f15);border:1px solid var(--line);border-radius:24px;padding:26px 28px;margin-bottom:22px}
 .rv-score{text-align:center}
@@ -208,19 +312,24 @@ footer a:hover{color:#fff}
   <symbol id="i-leaf" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M20 4C9 4 4 9 4 16c0 1.5.3 2.8.8 4 7-.5 15.2-4 15.2-16Z"/><path d="M4.8 20 13 11"/></g></symbol>
   <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-6.3 7-12a7 7 0 0 0-14 0c0 5.7 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></g></symbol>
   <symbol id="i-home" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M3 11 12 3.5 21 11M5.5 9v11.5h13V9"/><path d="M10 20.5v-6h4v6"/></g></symbol>
+  <symbol id="i-scorpion" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="10" cy="15.5" rx="3" ry="4"/><path d="M10 11.5c0-3 1.5-5 4-6.5s5-1 5.5 1.5-1.5 3.5-3 2.5"/><path d="m18 7.5 1.5-.5"/><path d="M7.2 13.5 4 12l-1.5 1.5M7.2 16 4 16.5l-1 2M12.8 13.5l2.4-.8M8 19l-2 2.5M12 19l2 2.5"/><path d="M8.5 11.5 6 8.5 4 9M11.5 11.8 12 9"/></g></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" d="M5 3.5h3.5l1.7 4.3-2.2 1.4a11 11 0 0 0 6.8 6.8l1.4-2.2 4.3 1.7V19a1.5 1.5 0 0 1-1.6 1.5A16.5 16.5 0 0 1 3.5 5.1 1.5 1.5 0 0 1 5 3.5Z"/></symbol>
   <symbol id="i-doc" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 2.5h8l4 4v15H6z"/><path d="M14 2.5v4h4M9 12h6M9 16h6"/></g></symbol>
 </svg>
 
+<div class="season" id="season" hidden>🦂 Calor e chuva trazem escorpiões e baratas.<a href="#orcamento" data-pick="dedet" data-praga="Escorpiões">Agendar →</a><button type="button" aria-label="Fechar aviso" id="seasonX">×</button></div>
 <header class="nav">
   <div class="wrap">
     <a class="brand" href="#topo" aria-label="SmartLar — início"><img src="assets/logo.webp" alt="SmartLar"></a>
     <nav aria-label="Principal">
       <a href="#dedetizacao">Dedetização</a>
       <a href="#servicos">Serviços</a>
+      <a href="#exemplo">Orçamento</a>
       <a href="#avaliacoes">Avaliações</a>
       <a href="#como-funciona">Como funciona</a>
       <a href="#duvidas">Dúvidas</a>
     </nav>
+    <a class="btn btn-gh hide-m" href="tel:+5561996073257" aria-label="Ligar para a SmartLar"><svg class="i"><use href="#i-phone"/></svg><span>Ligar</span></a>
     <a class="btn btn-wa" data-wa="Olá! Vim pelo site da SmartLar e gostaria de um orçamento." href="#orcamento"><svg class="i"><use href="#i-wa"/></svg><span>(61) 99607-3257</span></a>
   </div>
 </header>
@@ -229,33 +338,78 @@ footer a:hover{color:#fff}
 <section class="hero">
   <div class="wrap">
     <div>
-      <span class="kicker">Proteção completa</span>
-      <h1><span class="chrome">Seu lar</span><span class="l2">protegido</span></h1>
+      <span class="kicker">Brasília e todo o DF</span>
+      <h1><span class="chrome">Praga em casa ou portão travado?</span><span class="l2">A SmartLar resolve.</span></h1>
       <p class="lead">Ambientes protegidos. <b>Família tranquila.</b></p>
-      <p style="color:var(--muted);max-width:560px;margin:-10px 0 26px">Dedetização, desratização e serviços residenciais completos em Brasília – DF. Do controle de pragas ao portão, fechadura eletrônica, elétrica e hidráulica: tudo que sua casa precisa em um só lugar.</p>
-      <div class="ctas">
-        <a class="btn btn-or" href="#orcamento"><svg class="i"><use href="#i-doc"/></svg>Solicite seu orçamento</a>
-        <a class="btn btn-wa" data-wa="Olá! Vim pelo site da SmartLar e gostaria de um orçamento." href="#orcamento"><svg class="i"><use href="#i-wa"/></svg>Chamar no WhatsApp</a>
+      <div class="doors">
+        <a class="door or" href="#problema" data-tab="pragas"><span class="em">🐜</span><div><b>Pragas em casa?</b><small>Escorpião, barata, rato, cupim · <b>atendimento 24h</b></small></div></a>
+        <a class="door bl" href="#problema" data-tab="casa"><span class="em">🔧</span><div><b>Reparo ou instalação?</b><small>Portão, fechadura, elétrica, hidráulica · <b>com agendamento</b></small></div></a>
       </div>
-      <div class="badges">
-        <div class="badge"><svg><use href="#i-clock"/></svg><div><b>Atendimento 24h</b>Equipe profissional</div></div>
-        <div class="badge"><svg><use href="#i-pin"/></svg><div><b>Brasília – DF</b>Atendemos todo o DF</div></div>
-        <a class="badge" href="#avaliacoes" style="text-decoration:none"><span class="stars" style="font-size:18px">★</span><div><b><span data-g="rating">4,9</span> no Google</b><span data-g="total">40</span> avaliações</div></a>
+      <div class="ctas">
+        <a class="btn btn-or" href="#orcamento"><svg class="i"><use href="#i-doc"/></svg>Quero meu orçamento</a>
+        <a class="btn btn-call" href="tel:+5561996073257"><svg class="i"><use href="#i-phone"/></svg>Ligar agora</a>
+        <a class="btn btn-wa" data-wa="Olá! Vim pelo site da SmartLar e gostaria de um orçamento." href="#orcamento"><svg class="i"><use href="#i-wa"/></svg>WhatsApp</a>
+      </div>
+      <div class="trust">
+        <a href="#avaliacoes" style="text-decoration:none"><span><span class="stars">★★★★★</span><b data-g="rating">4,9</b> no Google (<span data-g="total">40</span> avaliações)</span></a>
+        <span>🕐 Dedetização 24 horas</span>
+        <span>🛡️ Garantia por escrito</span>
+        <span>📄 Orçamento detalhado em PDF</span>
       </div>
     </div>
     <img class="logo" src="assets/logo.webp" alt="Logo SmartLar — Serviços & Segurança, Dedetização e Desratização" width="440" height="331">
   </div>
 </section>
 
+<section id="problema" style="padding-top:30px">
+  <div class="wrap">
+    <div class="sec-h reveal"><span class="kicker">Comece por aqui</span><h2 class="chrome">Qual é o problema?</h2>
+      <p>Toque no que está acontecendo e o seu pedido de orçamento já vai preenchido.</p></div>
+    <div class="prob-tabs" role="tablist">
+      <button type="button" role="tab" class="or" aria-selected="true" data-tab="pragas">🐜 Pragas</button>
+      <button type="button" role="tab" class="bl" aria-selected="false" data-tab="casa">🔧 Reparos e instalações</button>
+    </div>
+    <div class="tiles" id="tab-pragas" role="tabpanel">
+      <button type="button" class="tile or" data-pick="dedet" data-praga="Escorpiões"><span class="ic"><svg><use href="#i-scorpion"/></svg></span><b>Escorpião</b><small>Ralos, caixas de esgoto, entulho e frestas</small><span class="go">Pedir orçamento →</span></button>
+      <button type="button" class="tile or" data-pick="dedet" data-praga="Baratas"><span class="ic"><svg><use href="#i-bug"/></svg></span><b>Barata</b><small>Cozinha, banheiro, ralos e caixa de gordura</small><span class="go">Pedir orçamento →</span></button>
+      <button type="button" class="tile or" data-pick="dedet" data-praga="Ratos"><span class="ic"><svg><use href="#i-rat"/></svg></span><b>Rato</b><small>Barulho no forro, fezes, embalagens roídas</small><span class="go">Pedir orçamento →</span></button>
+      <button type="button" class="tile or" data-pick="dedet" data-praga="Cupins"><span class="ic"><svg><use href="#i-termite"/></svg></span><b>Cupim</b><small>Pó de madeira, asas no chão, móveis ocos</small><span class="go">Pedir orçamento →</span></button>
+      <button type="button" class="tile or" data-pick="dedet" data-praga="Formigas"><span class="ic"><svg><use href="#i-ant"/></svg></span><b>Formiga</b><small>Trilhas na cozinha, formigueiro no quintal</small><span class="go">Pedir orçamento →</span></button>
+      <button type="button" class="tile or" data-pick="dedet" data-praga="Aranhas"><span class="ic"><svg><use href="#i-spider"/></svg></span><b>Aranha</b><small>Cantos, garagem, jardim e áreas externas</small><span class="go">Pedir orçamento →</span></button>
+    </div>
+    <div class="tiles" id="tab-casa" role="tabpanel" hidden>
+      <button type="button" class="tile bl" data-pick="serv" data-servico="Conserto de portão"><span class="ic"><svg><use href="#i-gate"/></svg></span><b>Portão travado ou com defeito</b><small>Conserto de portão</small><span class="go">Pedir orçamento →</span></button>
+      <button type="button" class="tile bl" data-pick="serv" data-servico="Instalação de motor de portão"><span class="ic"><svg><use href="#i-gear"/></svg></span><b>Motor de portão</b><small>Instalação residencial e industrial</small><span class="go">Pedir orçamento →</span></button>
+      <button type="button" class="tile bl" data-pick="serv" data-servico="Instalação de fechadura eletrônica"><span class="ic"><svg><use href="#i-lock"/></svg></span><b>Fechadura eletrônica</b><small>Instalação e configuração</small><span class="go">Pedir orçamento →</span></button>
+      <button type="button" class="tile bl" data-pick="serv" data-servico="Serviços de elétrica"><span class="ic"><svg><use href="#i-bolt"/></svg></span><b>Tomada, disjuntor ou chuveiro</b><small>Serviços de elétrica residencial</small><span class="go">Pedir orçamento →</span></button>
+      <button type="button" class="tile bl" data-pick="serv" data-servico="Hidráulica / caixa d'água"><span class="ic"><svg><use href="#i-drop"/></svg></span><b>Vazamento ou caixa d'água</b><small>Hidráulica, limpeza e troca de caixa</small><span class="go">Pedir orçamento →</span></button>
+      <button type="button" class="tile bl" data-pick="serv" data-servico="Desentupimento"><span class="ic"><svg><use href="#i-pipe"/></svg></span><b>Pia ou ralo entupido</b><small>Desentupimento e limpeza de calha</small><span class="go">Pedir orçamento →</span></button>
+      <button type="button" class="tile bl" data-pick="serv" data-servico="Instalação de televisão"><span class="ic"><svg><use href="#i-tv"/></svg></span><b>TV na parede</b><small>Instalação de televisão e suporte</small><span class="go">Pedir orçamento →</span></button>
+    </div>
+    <div class="sos reveal" id="escorpiao">
+      <div class="big">🦂</div>
+      <div>
+        <h3>Achou escorpião em casa?</h3>
+        <ol>
+          <li>Não toque nem tente pegar com as mãos. Mantenha crianças e pets longe.</li>
+          <li>Em caso de picada: lave o local com água e sabão e procure atendimento médico imediatamente. <b>CIATox-DF: <a href="tel:08006446774">0800 644 6774</a></b> (24h) · <b>SAMU: <a href="tel:192">192</a></b>.</li>
+          <li>Chame a SmartLar: vistoriamos e tratamos ralos, caixas de esgoto, entulhos e frestas, onde eles se escondem. <a href="#orcamento" data-pick="dedet" data-praga="Escorpiões">Pedir dedetização →</a></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="dedetizacao" style="padding-top:30px">
   <div class="wrap">
     <div class="sec-h reveal"><span class="kicker">Nossos serviços</span><h2><span class="chrome">Duas frentes,</span> <span class="t-or">uma</span> <span class="t-bl">empresa</span></h2>
-      <p>Controle de pragas urbanas e manutenção residencial com o mesmo cuidado: técnico identificado, orçamento por escrito e garantia.</p></div>
+      <p>Controle de pragas e manutenção residencial com o mesmo cuidado: técnico identificado, orçamento por escrito e garantia.</p></div>
     <div class="fronts">
       <article class="front or reveal">
         <span class="tag">Dedetização e Desratização</span>
         <h3 class="chrome">Proteção contra pragas</h3>
         <p class="s">Casas, apartamentos, condomínios e comércios.</p>
+        <div class="meta"><span>🕐 Atendimento 24 horas</span><span>🛡️ Garantia por praga</span><span>📋 Orientações por escrito</span></div>
         <ul>
           <li><span class="ic"><svg><use href="#i-bug"/></svg></span><div>Dedetização<small>Baratas, escorpiões e insetos rasteiros</small></div></li>
           <li><span class="ic"><svg><use href="#i-rat"/></svg></span><div>Desratização<small>Iscas em áreas internas e externas</small></div></li>
@@ -269,6 +423,7 @@ footer a:hover{color:#fff}
         <span class="tag">Serviços &amp; Segurança</span>
         <h3 class="chrome">Serviços residenciais</h3>
         <p class="s">Tudo que sua casa precisa em um só lugar.</p>
+        <div class="meta"><span>📅 Com agendamento</span><span>🛡️ 90 dias de garantia na instalação</span><span>🧰 Material nosso ou seu</span></div>
         <ul>
           <li><span class="ic"><svg><use href="#i-gate"/></svg></span><div>Conserto de portão</div></li>
           <li><span class="ic"><svg><use href="#i-gear"/></svg></span><div>Instalação de motor de portão<small>Residencial e industrial</small></div></li>
@@ -287,10 +442,86 @@ footer a:hover{color:#fff}
 <section style="background:linear-gradient(180deg,transparent,#0b0e13 30%,#0b0e13 70%,transparent)">
   <div class="wrap">
     <div class="feat">
-      <div class="reveal"><svg><use href="#i-users"/></svg><b>Profissionais qualificados</b><span>Técnico identificado em cada visita</span></div>
-      <div class="reveal"><svg><use href="#i-shield"/></svg><b>Serviço confiável</b><span>Orçamento por escrito e garantia</span></div>
-      <div class="reveal"><svg><use href="#i-clock"/></svg><b>Atendimento rápido</b><span>Atendimento 24 horas</span></div>
-      <div class="reveal"><svg><use href="#i-leaf"/></svg><b>Produtos de qualidade</b><span>Marcas reconhecidas no mercado</span></div>
+      <div class="reveal"><svg><use href="#i-shield"/></svg><b>Garantia por escrito</b><span>Prazo no orçamento e no comprovante</span></div>
+      <div class="reveal"><svg><use href="#i-doc"/></svg><b>Orçamento detalhado</b><span>Etapas, materiais e valor à vista em PDF</span></div>
+      <div class="reveal"><svg><use href="#i-clock"/></svg><b>Dedetização 24h</b><span>Reparos e instalações com agendamento</span></div>
+      <div class="reveal"><svg><use href="#i-users"/></svg><b>Técnico identificado</b><span>Você sabe quem vai à sua casa</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="exemplo">
+  <div class="wrap">
+    <div class="sec-h reveal"><span class="kicker">Transparência</span><h2><span class="chrome">Veja como é o</span> <span class="t-or">nosso orçamento</span></h2>
+      <p>Nada de preço “de cabeça”. Você recebe tudo por escrito, em PDF, antes de fechar.</p></div>
+    <div class="ex">
+      <div class="reveal">
+        <div class="ex-tabs" role="tablist">
+          <button type="button" role="tab" aria-selected="true" data-ex="serv">🔧 Serviço residencial</button>
+          <button type="button" role="tab" aria-selected="false" data-ex="dedet">🐜 Dedetização</button>
+        </div>
+        <div class="paper" id="paper-serv" style="--pc:#00b0f0">
+          <img class="pl" src="assets/logo.webp" alt="">
+          <div class="pt">ORÇAMENTO – TÉCNICO</div><div class="ps">Troca de caixa d'água</div>
+          <table><tr><th colspan="2">CLIENTE</th></tr><tr><td>Nome</td><td>Cliente exemplo</td></tr><tr><td>Bairro</td><td>Samambaia</td></tr></table>
+          <div class="h">1. DETALHAMENTO DO SERVIÇO</div>
+          <table><tr><th>ID</th><th>DESCRIÇÃO</th></tr>
+            <tr><td class="c">1</td><td>Retirar o forro para acesso à caixa d'água</td></tr>
+            <tr><td class="c">2</td><td>Remover a caixa danificada</td></tr>
+            <tr><td class="c">3</td><td>Instalar a nova caixa d'água e conexões</td></tr>
+            <tr><td class="c">4</td><td>Reinstalar o forro</td></tr></table>
+          <div class="h">2. LISTA DE MATERIAIS</div>
+          <table><tr><th>FOTO</th><th>MATERIAL</th><th>QTD</th></tr>
+            <tr><td class="c"><span class="mat">🛢️</span></td><td>Caixa d'água 500 L</td><td class="c">1</td></tr>
+            <tr><td class="c"><span class="mat">🔧</span></td><td>Registro 50 mm</td><td class="c">1</td></tr>
+            <tr><td class="c"><span class="mat">🔩</span></td><td>Flange 50 mm</td><td class="c">1</td></tr></table>
+          <div class="h">3. GARANTIA</div><div>90 dias em relação à instalação.</div>
+          <div class="tot">Valor total: R$ 1.953,00</div>
+          <div class="av">À vista (PIX, débito ou dinheiro): R$ 1.800,00</div>
+          <div style="font-size:11px">Ou em até 3x sem juros.</div>
+          <div class="sig">Alessandro Marques</div>
+        </div>
+        <div class="paper" id="paper-dedet" style="--pc:#ff8c1a" hidden>
+          <img class="pl" src="assets/logo.webp" alt="">
+          <div class="pt">PROPOSTA TÉCNICA DE DEDETIZAÇÃO E DESRATIZAÇÃO</div><div class="ps">&nbsp;</div>
+          <table><tr><th colspan="2">CLIENTE</th></tr><tr><td>Nome</td><td>Cliente exemplo</td></tr><tr><td>Bairro</td><td>Taguatinga</td></tr></table>
+          <table><tr><th>APTO</th><th>CASA</th><th>CONDOMÍNIO</th><th>COMÉRCIO</th></tr><tr><td class="c"></td><td class="c"><b>X</b></td><td class="c"></td><td class="c"></td></tr></table>
+          <div class="h">1. FOCO</div><div>✓ Escorpião &nbsp; ✓ Barata germânica &nbsp; ✓ Formiga &nbsp; ✓ Rato</div>
+          <div class="h">2. OBSERVAÇÃO DE EXECUÇÃO</div>
+          <div>➢ Dedetização: aplicação interna e externa, caixas de esgoto e tubulações.<br>➢ Desratização: iscas nas áreas internas e externas.</div>
+          <div class="h">3. VALOR DO SERVIÇO</div>
+          <div>➢ Dedetização: R$ 550,00<br>➢ Desratização: R$ 600,00</div>
+          <div class="tot">Valor total: R$ 1.150,00</div>
+          <div class="av">No PIX, com desconto: R$ 1.000,00</div>
+          <div class="h">4. VALIDADE</div><div>15 (quinze) dias.</div>
+          <div class="sig">Alessandro Marques</div>
+        </div>
+        <p style="font-size:12.5px;color:var(--muted);margin-top:12px;text-align:center">Exemplo com cliente fictício e valores ilustrativos. O seu orçamento é feito para o seu caso.</p>
+      </div>
+      <div class="callouts reveal">
+        <div><b>Cada etapa por escrito</b><span>Você sabe exatamente o que vai ser feito, na ordem.</span></div>
+        <div><b>Materiais com foto e quantidade</b><span>Nada de surpresa na hora: o material vem listado. Pode ser nosso ou o seu, combinado antes.</span></div>
+        <div><b>Valor total e valor à vista</b><span>O preço fechado aparece no papel, com o desconto do PIX já calculado.</span></div>
+        <div><b>Garantia e validade</b><span>O prazo da garantia e da proposta ficam registrados.</span></div>
+        <div><b>Direto no seu WhatsApp</b><span>O PDF chega no celular: é só aprovar e agendar.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:10px">
+  <div class="wrap">
+    <div class="guar reveal">
+      <div class="seal">GARANTIA<br>POR<br>ESCRITO</div>
+      <div>
+        <h3>Se o problema voltar dentro do prazo, é só chamar.</h3>
+        <p>O prazo de garantia vem escrito no orçamento e no comprovante entregue ao final do serviço.</p>
+        <ul>
+          <li><b>Reparos e instalações:</b> 90 dias de garantia na instalação.</li>
+          <li><b>Dedetização:</b> prazo definido por praga, informado na proposta.</li>
+        </ul>
+      </div>
+      <a class="btn btn-wa" data-wa="Olá! Fiz um serviço com a SmartLar e quero acionar a garantia." href="#orcamento"><svg class="i"><use href="#i-wa"/></svg>Acionar garantia</a>
     </div>
   </div>
 </section>
@@ -322,8 +553,29 @@ footer a:hover{color:#fff}
     <div class="steps">
       <div class="step reveal"><b>Você chama</b><span>Pelo WhatsApp ou pelo formulário, conta o que precisa e onde é.</span></div>
       <div class="step reveal"><b>Orçamento técnico</b><span>Você recebe a proposta em PDF, com tudo detalhado e o valor à vista.</span></div>
-      <div class="step reveal"><b>Execução</b><span>Agendamos no melhor horário e o técnico executa com cuidado.</span></div>
+      <div class="step reveal"><b>Execução</b><span>Dedetização a qualquer hora; reparos e instalações no horário agendado. O técnico executa com cuidado.</span></div>
       <div class="step reveal"><b>Garantia e retorno</b><span>Você recebe as orientações, o recibo e lembramos você do próximo cuidado.</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="preparo" style="padding-top:10px">
+  <div class="wrap">
+    <div class="sec-h reveal"><span class="kicker">Dedetização</span><h2 class="chrome">Como se preparar</h2>
+      <p>Poucos cuidados fazem o serviço render mais. No dia, o técnico confirma tudo com você.</p></div>
+    <div class="prep">
+      <div class="reveal"><h3>Antes</h3><ul>
+        <li>Guarde alimentos, louças e escovas de dente em armários fechados.</li>
+        <li>Cubra aquários e leve os pets para fora dos ambientes que serão tratados.</li>
+        <li>Deixe livres ralos, rodapés, caixas de esgoto e áreas externas.</li>
+        <li>Avise se na casa há gestantes, bebês, idosos ou pessoas com alergia.</li>
+      </ul></div>
+      <div class="reveal"><h3>Depois</h3><ul>
+        <li>Aguarde o tempo indicado pelo técnico (em geral, 6 horas) antes de voltar.</li>
+        <li>Abra portas e janelas para ventilar ao retornar.</li>
+        <li>Não lave rodapés e cantos tratados nos dias seguintes.</li>
+        <li>Guarde o comprovante: nele estão as orientações e o prazo de garantia.</li>
+      </ul></div>
     </div>
   </div>
 </section>
@@ -335,9 +587,11 @@ footer a:hover{color:#fff}
       <h2><span class="chrome">Solicite seu</span> <span class="t-or">orçamento agora!</span></h2>
       <p>Preencha ao lado e a mensagem já vai pronta para o nosso WhatsApp. Respondemos o quanto antes.</p>
       <div class="contact">
-        <a data-wa="Olá! Vim pelo site da SmartLar." href="#orcamento"><svg><use href="#i-wa"/></svg><div><b>(61) 99607-3257</b><small>WhatsApp · atendimento 24 horas</small></div></a>
+        <a data-wa="Olá! Vim pelo site da SmartLar." href="#orcamento"><svg><use href="#i-wa"/></svg><div><b>(61) 99607-3257</b><small>WhatsApp · dedetização 24 horas</small></div></a>
+        <a href="tel:+5561996073257"><svg><use href="#i-phone"/></svg><div><b>Ligar agora</b><small>Reparos e instalações com agendamento</small></div></a>
         <a href="https://maps.app.goo.gl/Riw3g8QafyqiqJe1A" target="_blank" rel="noopener"><svg><use href="#i-pin"/></svg><div><b>Brasília – DF</b><small>Ver no Google Maps e avaliar</small></div></a>
       </div>
+      <div class="regions"><small>Atendemos Brasília e todo o DF, incluindo:</small><div id="regioes"></div></div>
     </div>
     <form class="q reveal" id="qform" novalidate>
       <label>Qual serviço?</label>
@@ -392,6 +646,11 @@ footer a:hover{color:#fff}
       <details class="reveal"><summary>De quanto em quanto tempo devo dedetizar?</summary><p>Depende do imóvel e da praga. Residências costumam fazer a manutenção a cada seis meses; condomínios e comércios, com mais frequência. O técnico indica o prazo ideal para o seu caso e a SmartLar avisa quando estiver chegando a hora.</p></details>
       <details class="reveal"><summary>O serviço tem garantia?</summary><p>Sim. O prazo de garantia de cada serviço aparece no orçamento e no comprovante entregue ao final.</p></details>
       <details class="reveal"><summary>Atendem condomínios e comércios?</summary><p>Sim. Fazemos o orçamento conforme o tamanho do local e a necessidade, com proposta técnica por escrito.</p></details>
+      <details class="reveal"><summary>Quanto custa?</summary><p>Depende do tamanho do local e da praga, ou do serviço e do material. O orçamento é sem compromisso e chega por escrito, em PDF, com o valor total e o valor à vista.</p></details>
+      <details class="reveal"><summary>Recebo algum comprovante?</summary><p>Sim. Ao final você recebe o recibo e as orientações por escrito, com o prazo de garantia do serviço.</p></details>
+      <details class="reveal"><summary>O atendimento 24 horas vale para tudo?</summary><p>O atendimento 24 horas é para dedetização e desratização. Reparos e instalações (portão, fechadura, elétrica, hidráulica) são feitos com horário agendado.</p></details>
+      <details class="reveal"><summary>Quem fornece o material nos reparos e instalações?</summary><p>Depende do serviço: podemos fornecer o material ou usar o que você já tem. Isso fica combinado e escrito no orçamento.</p></details>
+      <details class="reveal"><summary>Atendem portão industrial?</summary><p>Sim. Instalamos motor de portão residencial e industrial.</p></details>
       <details class="reveal"><summary>Quais formas de pagamento?</summary><p>PIX, débito, dinheiro, cartão parcelado e link de pagamento. Pagamento à vista tem desconto, informado no orçamento.</p></details>
     </div>
   </div>
@@ -403,18 +662,24 @@ footer a:hover{color:#fff}
     <img src="assets/logo.webp" alt="SmartLar" loading="lazy">
     <div>
       <b style="color:#fff">SmartLar</b> · Dedetização e Desratização · Serviços &amp; Segurança<br>
-      Brasília – DF · <a data-wa="Olá! Vim pelo site da SmartLar." href="#orcamento">(61) 99607-3257</a> · CNPJ 66.204.341/0001-97
+      Brasília e todo o DF · <a href="tel:+5561996073257">(61) 99607-3257</a> · Dedetização 24h · CNPJ 66.204.341/0001-97
       <div class="legal" id="licencas"><!-- Quando houver: Licença sanitária nº ____ · Licença ambiental nº ____ (exigido em propaganda pela RDC 622/2022) --></div>
     </div>
     <div style="text-align:right"><a href="https://maps.app.goo.gl/Riw3g8QafyqiqJe1A" target="_blank" rel="noopener">Google Maps</a><br><a href="app/" style="opacity:.6">Área da equipe</a></div>
   </div>
 </footer>
 
+<nav class="mbar" aria-label="Contato rápido">
+  <a class="c" href="tel:+5561996073257"><svg class="i"><use href="#i-phone"/></svg>Ligar</a>
+  <a class="w" data-wa="Olá! Vim pelo site da SmartLar e gostaria de um orçamento." href="#orcamento"><svg class="i"><use href="#i-wa"/></svg>WhatsApp</a>
+</nav>
 <a class="wa-float" data-wa="Olá! Vim pelo site da SmartLar e gostaria de um orçamento." href="#orcamento" aria-label="Falar no WhatsApp"><svg><use href="#i-wa"/></svg></a>
 
 <script>
 "use strict";
 const WA = "5561996073257";
+/* Regiões exibidas no site (edite à vontade) */
+const REGIOES = ["Samambaia","Taguatinga","Ceilândia","Recanto das Emas","Riacho Fundo","Águas Claras","Vicente Pires","Guará","Núcleo Bandeirante","Plano Piloto","Gama","Santa Maria"];
 
 /* ===== Google Meu Negócio =====
    Sem chave: o site mostra a nota e o total abaixo (atualize a cada versão).
@@ -433,7 +698,40 @@ document.querySelectorAll("[data-wa]").forEach(a=>{ a.href=waURL(a.dataset.wa); 
 const form=document.getElementById("qform");
 const setFront=v=>{ document.getElementById("optDedet").hidden = v!=="dedet"; document.getElementById("optServ").hidden = v!=="serv"; };
 form.addEventListener("change",e=>{ if(e.target.name==="frente") setFront(e.target.value); });
-document.querySelectorAll("[data-pick]").forEach(b=>b.addEventListener("click",()=>{ const r=form.querySelector(`input[name=frente][value=${b.dataset.pick}]`); r.checked=true; setFront(r.value); }));
+function escolher(b){
+  const r=form.querySelector(`input[name=frente][value=${b.dataset.pick}]`); r.checked=true; setFront(r.value);
+  if(b.dataset.praga){ const c=form.querySelector(`input[name=pragas][value="${b.dataset.praga}"]`); if(c) c.checked=true; }
+  if(b.dataset.servico){ form.servico.value=b.dataset.servico; }
+}
+document.addEventListener("click",e=>{
+  const b=e.target.closest("[data-pick]"); if(!b) return;
+  escolher(b);
+  if(b.tagName==="BUTTON"){ document.getElementById("orcamento").scrollIntoView({behavior:"smooth"}); }
+  setTimeout(()=>form.nome.focus({preventScroll:true}),600);
+});
+/* abas "Qual é o problema?" */
+function abrirAba(t){
+  document.querySelectorAll(".prob-tabs [data-tab]").forEach(x=>x.setAttribute("aria-selected", x.dataset.tab===t));
+  document.getElementById("tab-pragas").hidden = t!=="pragas"; document.getElementById("tab-casa").hidden = t!=="casa";
+}
+document.querySelectorAll("[data-tab]").forEach(b=>b.addEventListener("click",()=>abrirAba(b.dataset.tab)));
+/* exemplo de orçamento */
+document.querySelectorAll("[data-ex]").forEach(b=>b.addEventListener("click",()=>{
+  document.querySelectorAll("[data-ex]").forEach(x=>x.setAttribute("aria-selected", x===b));
+  document.getElementById("paper-serv").hidden = b.dataset.ex!=="serv"; document.getElementById("paper-dedet").hidden = b.dataset.ex!=="dedet";
+}));
+/* regiões */
+document.getElementById("regioes").innerHTML = REGIOES.map(r=>`<span>${r}</span>`).join("");
+/* aviso de época: setembro a março */
+(()=>{ const m=new Date().getMonth()+1, el=document.getElementById("season");
+  let fechado=false; try{ fechado=sessionStorage.getItem("season_x")==="1"; }catch(_){}
+  if((m>=9||m<=3) && !fechado) el.hidden=false;
+  document.getElementById("seasonX").addEventListener("click",()=>{ el.hidden=true; try{ sessionStorage.setItem("season_x","1"); }catch(_){} });
+})();
+/* perguntas frequentes para o Google */
+(()=>{ const qa=[...document.querySelectorAll("#duvidas details")].map(d=>({"@type":"Question","name":d.querySelector("summary").textContent.trim(),"acceptedAnswer":{"@type":"Answer","text":d.querySelector("p").textContent.trim()}}));
+  const sc=document.createElement("script"); sc.type="application/ld+json"; sc.textContent=JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":qa}); document.head.appendChild(sc);
+})();
 form.addEventListener("submit",e=>{
   e.preventDefault();
   const f=new FormData(form), nome=(f.get("nome")||"").trim(), bairro=(f.get("bairro")||"").trim();
