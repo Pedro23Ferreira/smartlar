@@ -2,6 +2,21 @@
 
 Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/) e [SemVer](https://semver.org/lang/pt-BR/).
 
+## [0.5.0] — 2026-11-16
+### Adicionado
+- Topo com o problema na frente (“Praga em casa ou portão travado?”), duas portas de entrada (pragas 24h / reparos com agendamento), botões Orçamento, Ligar agora e WhatsApp, e faixa de confiança (nota Google, dedetização 24h, garantia, orçamento em PDF).
+- Seção **Qual é o problema?** com abas Pragas e Reparos: um toque preenche o pedido de orçamento.
+- Bloco **Achou escorpião em casa?** com primeiros passos, CIATox-DF (0800 644 6774) e SAMU (192).
+- Seção **Veja como é o nosso orçamento**: exemplo de orçamento técnico e de proposta de dedetização (cliente fictício, valores ilustrativos).
+- Seção **Garantia por escrito** com botão para acionar a garantia.
+- Seção **Como se preparar** (antes e depois da dedetização).
+- Barra fixa no celular com Ligar e WhatsApp; botão Ligar no cabeçalho.
+- Regiões atendidas, aviso de época (set–mar) e marcação de perguntas frequentes para o Google.
+- Novas perguntas: preço, comprovante, 24h, material, portão industrial.
+### Alterado
+- “Atendimento 24 horas” passa a valer só para dedetização; reparos e instalações “com agendamento”.
+- Diferenciais reescritos: garantia por escrito, orçamento detalhado, dedetização 24h, técnico identificado.
+
 ## [0.4.0] — 2026-11-14
 ### Adicionado
 - Seção **Avaliações** com a nota do Google (4,9 · 40 avaliações em 14/11/2026), botões “Avaliar a SmartLar” e “Ver todas no Google”.

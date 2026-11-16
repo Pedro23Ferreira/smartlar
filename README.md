@@ -15,6 +15,11 @@ Site da **SmartLar** (Dedetização e Desratização · Serviços & Segurança) 
 
 > GitHub Pages em repositório **privado** exige plano pago do GitHub. No plano gratuito, o repositório precisa ser público para publicar.
 
+## Ajustes rápidos no site
+- **Regiões atendidas:** lista `REGIOES` no fim do `index.html`.
+- **Aviso de época** (escorpiões e baratas): aparece de setembro a março; o visitante pode fechar.
+- **Atendimento 24 h:** vale só para dedetização. Reparos e instalações aparecem como "com agendamento".
+
 ## Google Meu Negócio no site
 Sem configuração, o site mostra a nota e o total de avaliações gravados em `GOOGLE` (no fim do `index.html`). Atualize `rating`, `total` e `conferidoEm` a cada versão.
 
@@ -39,7 +44,8 @@ Cada versão tem uma etiqueta (`git tag`) no formato `vMAIOR.MENOR.CORREÇÃO`. 
 | `v0.2.0` | App: identidade visual e PDF no modelo oficial da SmartLar |
 | `v0.3.0` | Site institucional + pedido de orçamento pelo WhatsApp; app movido para `/app` |
 | `v0.4.0` | Site: avaliações e mapa do Google Meu Negócio |
-| `v0.5.0` *(planejada)* | App: produtos químicos, registro de serviço, relatório + recibo |
-| `v0.6.0` *(planejada)* | App: retornos automáticos (garantia e próxima aplicação) |
-| `v0.7.0` *(planejada)* | App: assinatura na tela, fotos, checklist de ambientes e cartaz de aviso |
-| `v0.8.0` *(planejada)* | Site ↔ app: pedidos do site entram direto no app |
+| `v0.5.0` | Site: "Qual é o problema?", ligar + barra fixa no celular, exemplo de orçamento, garantia, escorpião, preparo, regiões |
+| `v0.6.0` *(planejada)* | App: produtos químicos, registro de serviço, relatório + recibo |
+| `v0.7.0` *(planejada)* | App: retornos automáticos (garantia e próxima aplicação) |
+| `v0.8.0` *(planejada)* | App: assinatura na tela, fotos, checklist de ambientes e cartaz de aviso |
+| `v0.9.0` *(planejada)* | Site ↔ app: pedidos do site entram direto no app |
