@@ -2,6 +2,20 @@
 
 Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/) e [SemVer](https://semver.org/lang/pt-BR/).
 
+## [0.6.0] — 2026-11-17
+### Alterado
+- **Site mais enxuto**: de 12 para 7 blocos (topo, pragas, como funciona, orçamento de exemplo, avaliações, pedido de orçamento, perguntas). Topo com uma mensagem só (“Praga em casa? A SmartLar resolve.”) e dois botões.
+- Serviços da casa viram uma faixa pequena (“Também fazemos, com agendamento”) dentro do pedido de orçamento.
+- “Como se preparar” virou uma pergunta do FAQ; orçamento de exemplo só de dedetização.
+### Removido
+- Tudo sobre portão e motor de portão (topo, abas, lista de serviços, formulário e perguntas).
+- Abas “Qual é o problema?” e blocos duplicados (duas frentes, faixa de diferenciais).
+### Adicionado
+- **Conteúdo editável pela planilha do Google**: telefone, WhatsApp, CNPJ, aviso de época, prazo de garantia, nota do Google, licenças, valores do orçamento de exemplo e regiões atendidas. Sem link configurado ou com a planilha fora do ar, o site usa os textos que já estão nele.
+- Guia `docs/PLANILHA.md`.
+### Corrigido
+- O telefone da planilha não altera os links do CIATox (0800) e do SAMU (192).
+
 ## [0.5.0] — 2026-11-16
 ### Adicionado
 - Topo com o problema na frente (“Praga em casa ou portão travado?”), duas portas de entrada (pragas 24h / reparos com agendamento), botões Orçamento, Ligar agora e WhatsApp, e faixa de confiança (nota Google, dedetização 24h, garantia, orçamento em PDF).
