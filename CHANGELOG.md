@@ -2,6 +2,11 @@
 
 Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/) e [SemVer](https://semver.org/lang/pt-BR/).
 
+## [0.6.2] — 2026-11-17
+### Alterado
+- **Site só de dedetização e desratização.** O site não oferece mais serviços da casa (elétrica, hidráulica, fechadura, TV, desentupimento): saíram a faixa “Também fazemos”, a escolha de serviço no formulário, as perguntas sobre reparos e a garantia de instalação. Título, descrição e dados para o Google ajustados.
+- O app de orçamento **mantém** o catálogo de serviços (inclusive portão): a mudança vale só para o site.
+
 ## [0.6.1] — 2026-11-17
 ### Alterado
 - Site ligado à planilha “SmartLar - Conteúdo do site” (compartilhada só para leitura, por link). O link de “Publicar na web” do Google não funcionou; usamos o endereço `gviz` em CSV, que dá o mesmo resultado.

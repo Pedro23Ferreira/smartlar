@@ -9,7 +9,6 @@ Quem tem acesso à planilha edita ali, sem mexer em código. O site atualiza soz
 |---|---|
 | Contato | telefone (como aparece e o do botão Ligar), WhatsApp, CNPJ |
 | Aviso de época | faixa no topo: modo (AUTO / SIM / NAO), texto e botão |
-| Garantia | prazo de reparos e instalações (aparece em 3 lugares) |
 | Avaliações Google | nota e total de avaliações |
 | Licenças | licença sanitária, licença ambiental e responsável técnico (vazio = não aparece) |
 | Orçamento de exemplo | mostrar ou esconder valores (SIM / NAO) e os valores da dedetização |
@@ -35,7 +34,7 @@ Para parar de usar a planilha, deixe o link vazio (`csv: ""`) e envie para o Git
 
 ## Limites
 
-- Nome da empresa, serviços, FAQ e textos longos ficam no código (`index.html`).
+- Nome da empresa, pragas atendidas, FAQ e textos longos ficam no código (`index.html`).
 - O Google (busca) lê o texto que está no código, não o que vem da planilha. Mantenha telefone e regiões
   do código atualizados de vez em quando.
 - A planilha fica aberta para leitura por quem tiver o link. Não coloque nada confidencial nela.

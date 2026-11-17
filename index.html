@@ -3,19 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>SmartLar · Dedetização 24h e Serviços Residenciais em Brasília e todo o DF</title>
-<meta name="description" content="SmartLar: dedetização, desratização, descupinização, desformigação e desaranhação, além de fechadura eletrônica, elétrica e hidráulica em Brasília e no DF. Dedetização 24 horas, orçamento detalhado e garantia por escrito.">
+<title>SmartLar · Dedetização 24h em Brasília e todo o DF</title>
+<meta name="description" content="SmartLar: dedetização, desratização, descupinização, desformigação e desaranhação em Brasília e no DF. Dedetização 24 horas, orçamento detalhado e garantia por escrito.">
 <meta name="theme-color" content="#0b0d12">
 <link rel="icon" href="assets/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="assets/icon-192.png">
 <meta property="og:type" content="website">
-<meta property="og:title" content="SmartLar · Dedetização e Serviços Residenciais em Brasília – DF">
-<meta property="og:description" content="Ambientes protegidos. Família tranquila. Dedetização 24 horas, reparos com agendamento e orçamento sem compromisso.">
+<meta property="og:title" content="SmartLar · Dedetização 24h em Brasília – DF">
+<meta property="og:description" content="Ambientes protegidos. Família tranquila. Dedetização 24 horas, orçamento sem compromisso e garantia por escrito.">
 <meta property="og:image" content="assets/og.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,800;1,900&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","name":"SmartLar","description":"Dedetização, desratização e serviços residenciais em Brasília – DF.","telephone":"+55-61-99607-3257","areaServed":"Brasília – DF","openingHours":"Mo-Su 00:00-23:59","areaServed":["Brasília","Distrito Federal"],"priceRange":"$$","hasMap":"https://maps.app.goo.gl/Riw3g8QafyqiqJe1A","image":"assets/logo.webp"}
+{"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","name":"SmartLar","description":"Dedetização e desratização 24 horas em Brasília – DF.","telephone":"+55-61-99607-3257","areaServed":"Brasília – DF","openingHours":"Mo-Su 00:00-23:59","areaServed":["Brasília","Distrito Federal"],"priceRange":"$$","hasMap":"https://maps.app.goo.gl/Riw3g8QafyqiqJe1A","image":"assets/logo.webp"}
 </script>
 <style>
 :root{
@@ -430,7 +430,6 @@ footer a:hover{color:#fff}
         <h3>Se o problema voltar dentro do prazo, é só chamar.</h3>
         <p>O prazo de garantia vem escrito no orçamento e no comprovante entregue ao final do serviço.</p>
         <ul>
-          <li><b>Reparos e instalações:</b> <span data-s="garantia_instalacao">90 dias</span> de garantia na instalação.</li>
           <li><b>Dedetização:</b> prazo definido por praga, informado na proposta.</li>
         </ul>
       </div>
@@ -468,20 +467,15 @@ footer a:hover{color:#fff}
       <p>Preencha ao lado e a mensagem já vai pronta para o nosso WhatsApp. Respondemos o quanto antes.</p>
       <div class="contact">
         <a data-wa="Olá! Vim pelo site da SmartLar." href="#orcamento"><svg><use href="#i-wa"/></svg><div><b data-s="telefone_exibicao">(61) 99607-3257</b><small>WhatsApp · dedetização 24 horas</small></div></a>
-        <a href="tel:+5561996073257"><svg><use href="#i-phone"/></svg><div><b>Ligar agora</b><small>Reparos e instalações com agendamento</small></div></a>
+        <a href="tel:+5561996073257"><svg><use href="#i-phone"/></svg><div><b>Ligar agora</b><small>Dedetização 24 horas</small></div></a>
         <a href="https://maps.app.goo.gl/Riw3g8QafyqiqJe1A" target="_blank" rel="noopener"><svg><use href="#i-pin"/></svg><div><b>Brasília – DF</b><small>Ver no Google Maps e avaliar</small></div></a>
       </div>
       <div class="regions"><small>Atendemos Brasília e todo o DF, incluindo:</small><div id="regioes"></div></div>
-      <div class="regions"><small>Também fazemos, com agendamento:</small><div><span>Elétrica</span><span>Hidráulica</span><span>Caixa d'água</span><span>Fechadura eletrônica</span><span>TV na parede</span><span>Desentupimento</span></div></div>
     </div>
     <form class="q reveal" id="qform" novalidate>
-      <label>Qual serviço?</label>
-      <div class="seg" id="segFront">
-        <label><input type="radio" name="frente" value="dedet" checked><span>🐜 Dedetização / pragas</span></label>
-        <label><input type="radio" name="frente" value="serv"><span>🔧 Serviço residencial</span></label>
-      </div>
+      <input type="hidden" name="frente" value="dedet">
       <div id="optDedet">
-        <label>Quais pragas? <small style="font-weight:400;color:var(--muted)">(pode marcar várias)</small></label>
+        <label>Qual praga? <small style="font-weight:400;color:var(--muted)">(pode marcar várias)</small></label>
         <div class="seg">
           <label><input type="checkbox" name="pragas" value="Baratas"><span>Baratas</span></label>
           <label><input type="checkbox" name="pragas" value="Escorpiões"><span>Escorpiões</span></label>
@@ -491,14 +485,6 @@ footer a:hover{color:#fff}
           <label><input type="checkbox" name="pragas" value="Aranhas"><span>Aranhas</span></label>
           <label><input type="checkbox" name="pragas" value="Outra"><span>Outra / não sei</span></label>
         </div>
-      </div>
-      <div id="optServ" hidden>
-        <label for="servico">Serviço</label>
-        <select id="servico" name="servico">
-          <option>Instalação de fechadura eletrônica</option>
-          <option>Instalação de televisão</option><option>Serviços de elétrica</option><option>Hidráulica / caixa d'água</option>
-          <option>Desentupimento</option><option>Limpeza de calha</option><option>Outro</option>
-        </select>
       </div>
       <label>Tipo de imóvel</label>
       <div class="seg bl">
@@ -528,9 +514,7 @@ footer a:hover{color:#fff}
       <details class="reveal"><summary>De quanto em quanto tempo devo dedetizar?</summary><p>Depende do imóvel e da praga. Residências costumam fazer a manutenção a cada seis meses; condomínios e comércios, com mais frequência. O técnico indica o prazo ideal para o seu caso e a SmartLar avisa quando estiver chegando a hora.</p></details>
       <details class="reveal"><summary>O serviço tem garantia?</summary><p>Sim. O prazo de garantia de cada serviço aparece no orçamento e no comprovante (recibo e orientações por escrito) entregue ao final.</p></details>
       <details class="reveal"><summary>Atendem condomínios e comércios?</summary><p>Sim. Fazemos o orçamento conforme o tamanho do local e a necessidade, com proposta técnica por escrito.</p></details>
-      <details class="reveal"><summary>Quanto custa?</summary><p>Depende do tamanho do local e da praga, ou do serviço e do material. O orçamento é sem compromisso e chega por escrito, em PDF, com o valor total e o valor à vista.</p></details>
-            <details class="reveal"><summary>O atendimento 24 horas vale para tudo?</summary><p>O atendimento 24 horas é para dedetização e desratização. Reparos e instalações (fechadura, elétrica, hidráulica) são feitos com horário agendado.</p></details>
-      <details class="reveal"><summary>Quem fornece o material nos reparos e instalações?</summary><p>Depende do serviço: podemos fornecer o material ou usar o que você já tem. Isso fica combinado e escrito no orçamento.</p></details>
+      <details class="reveal"><summary>Quanto custa?</summary><p>Depende do tamanho do local e da praga. O orçamento é sem compromisso e chega por escrito, em PDF, com o valor total e o valor à vista.</p></details>
             <details class="reveal"><summary>Quais formas de pagamento?</summary><p>PIX, débito, dinheiro, cartão parcelado e link de pagamento. Pagamento à vista tem desconto, informado no orçamento.</p></details>
     </div>
   </div>
@@ -541,7 +525,7 @@ footer a:hover{color:#fff}
   <div class="wrap">
     <img src="assets/logo.webp" alt="SmartLar" loading="lazy">
     <div>
-      <b style="color:#fff">SmartLar</b> · Dedetização e Desratização · Serviços &amp; Segurança<br>
+      <b style="color:#fff">SmartLar</b> · Dedetização e Desratização<br>
       Brasília e todo o DF · <a href="tel:+5561996073257" data-s="telefone_exibicao">(61) 99607-3257</a> · Dedetização 24h · CNPJ <span data-s="cnpj">66.204.341/0001-97</span>
       <div class="legal" id="licencas"><!-- Quando houver: Licença sanitária nº ____ · Licença ambiental nº ____ (exigido em propaganda pela RDC 622/2022) --></div>
     </div>
@@ -578,12 +562,8 @@ function ligarWA(){ document.querySelectorAll("[data-wa]").forEach(a=>{ a.href=w
 ligarWA();
 
 const form=document.getElementById("qform");
-const setFront=v=>{ document.getElementById("optDedet").hidden = v!=="dedet"; document.getElementById("optServ").hidden = v!=="serv"; };
-form.addEventListener("change",e=>{ if(e.target.name==="frente") setFront(e.target.value); });
 function escolher(b){
-  const r=form.querySelector(`input[name=frente][value=${b.dataset.pick}]`); r.checked=true; setFront(r.value);
-  if(b.dataset.praga){ const c=form.querySelector(`input[name=pragas][value="${b.dataset.praga}"]`); if(c) c.checked=true; }
-  if(b.dataset.servico){ form.servico.value=b.dataset.servico; }
+    if(b.dataset.praga){ const c=form.querySelector(`input[name=pragas][value="${b.dataset.praga}"]`); if(c) c.checked=true; }
 }
 document.addEventListener("click",e=>{
   const b=e.target.closest("[data-pick]"); if(!b) return;
@@ -612,7 +592,7 @@ form.addEventListener("submit",e=>{
   if(!nome||!bairro){ (nome?form.bairro:form.nome).focus(); (nome?form.bairro:form.nome).style.borderColor="#ff5a5a"; return; }
   const dedet=f.get("frente")==="dedet";
   let t=`Olá! Sou ${nome} e vim pelo site da SmartLar.\n\n`;
-  t+= dedet ? `*Orçamento de dedetização*\nPragas: ${f.getAll("pragas").join(", ")||"não sei / outra"}\n` : `*Orçamento de serviço residencial*\nServiço: ${f.get("servico")}\n`;
+  t+= `*Orçamento de dedetização*\nPragas: ${f.getAll("pragas").join(", ")||"não sei / outra"}\n`;
   t+=`Imóvel: ${f.get("imovel")}\nLocal: ${bairro}`;
   const m=(f.get("msg")||"").trim(); if(m) t+=`\n\n${m}`;
   window.open(waURL(t),"_blank","noopener");
