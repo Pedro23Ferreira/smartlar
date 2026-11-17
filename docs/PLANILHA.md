@@ -24,18 +24,18 @@ Só a coluna **Valor** deve ser alterada. A coluna **Campo** é o nome que o sit
 - Campo vazio = o site mantém o texto que já tem.
 - Se a planilha sair do ar, o site continua normal com os últimos textos.
 
-## Ligar o site à planilha (uma vez)
+## Ligar o site à planilha (já está ligado)
 
-1. Na planilha: **Arquivo > Compartilhar > Publicar na Web**.
-2. Escolha a aba e o formato **Valores separados por vírgula (.csv)** e clique em **Publicar**.
-3. Copie o link e cole em `index.html`, na linha `const PLANILHA = { csv: "AQUI", ... }`.
-4. Envie para o GitHub (commit). Pronto.
+1. Na planilha: **Compartilhar > Acesso geral > Qualquer pessoa com o link > Leitor**.
+2. O link usado pelo site é este (troque `ID_DA_PLANILHA` e `NUMERO_DA_ABA` pelos da sua planilha; o número da aba está no fim do endereço, depois de `gid=`):
+   `https://docs.google.com/spreadsheets/d/ID_DA_PLANILHA/gviz/tq?tqx=out:csv&headers=1&gid=NUMERO_DA_ABA`
+3. Ele fica em `index.html`, na linha `const PLANILHA = { csv: "...", ... }`.
 
-Para parar de usar a planilha, deixe o link vazio (`csv: ""`).
+Para parar de usar a planilha, deixe o link vazio (`csv: ""`) e envie para o GitHub.
 
 ## Limites
 
 - Nome da empresa, serviços, FAQ e textos longos ficam no código (`index.html`).
 - O Google (busca) lê o texto que está no código, não o que vem da planilha. Mantenha telefone e regiões
   do código atualizados de vez em quando.
-- A planilha publicada é pública (qualquer pessoa com o link lê). Não coloque nada confidencial nela.
+- A planilha fica aberta para leitura por quem tiver o link. Não coloque nada confidencial nela.

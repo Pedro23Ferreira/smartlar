@@ -660,10 +660,11 @@ async function carregarGoogle(){
 carregarGoogle();
 
 /* ===== Conteúdo editável pela planilha do Google =====
-   Como ligar: na planilha, Arquivo > Compartilhar > Publicar na Web > escolha a aba > "Valores separados por vírgula (.csv)" > Publicar.
-   Cole o link abaixo. Vazio = o site usa os textos que já estão escritos aqui (nada quebra).
+   Como ligar: na planilha, Compartilhar > "Qualquer pessoa com o link" > Leitor. O link abaixo é o da planilha no formato CSV:
+   https://docs.google.com/spreadsheets/d/ID_DA_PLANILHA/gviz/tq?tqx=out:csv&headers=1&gid=NUMERO_DA_ABA
+   Vazio = o site usa os textos que já estão escritos aqui (nada quebra).
    Depois de editar a planilha, o site atualiza sozinho em alguns minutos. */
-const PLANILHA = { csv: "", cacheMin: 10 };
+const PLANILHA = { csv: "https://docs.google.com/spreadsheets/d/1w8pShZX1PT0mUCjs1EiYgWSAyOL8WlTbIAvjPjEmt2Y/gviz/tq?tqx=out:csv&headers=1&gid=1987977756", cacheMin: 10 };
 /* marca só os telefones da SmartLar (o 0800 do CIATox e o 192 do SAMU não mudam) */
 document.querySelectorAll('a[href="tel:+5561996073257"]').forEach(a=>a.dataset.tel="1");
 

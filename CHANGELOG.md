@@ -2,6 +2,10 @@
 
 Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/) e [SemVer](https://semver.org/lang/pt-BR/).
 
+## [0.6.1] — 2026-11-17
+### Alterado
+- Site ligado à planilha “SmartLar - Conteúdo do site” (compartilhada só para leitura, por link). O link de “Publicar na web” do Google não funcionou; usamos o endereço `gviz` em CSV, que dá o mesmo resultado.
+
 ## [0.6.0] — 2026-11-17
 ### Alterado
 - **Site mais enxuto**: de 12 para 7 blocos (topo, pragas, como funciona, orçamento de exemplo, avaliações, pedido de orçamento, perguntas). Topo com uma mensagem só (“Praga em casa? A SmartLar resolve.”) e dois botões.

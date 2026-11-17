@@ -46,6 +46,7 @@ Cada versão tem uma etiqueta (`git tag`) no formato `vMAIOR.MENOR.CORREÇÃO`. 
 | `v0.4.0` | Site: avaliações e mapa do Google Meu Negócio |
 | `v0.5.0` | Site: "Qual é o problema?", ligar + barra fixa no celular, exemplo de orçamento, garantia, escorpião, preparo, regiões |
 | `v0.6.0` | Site enxuto (7 blocos, sem portão) + conteúdo editável pela planilha do Google (ver `docs/PLANILHA.md`) |
+| `v0.6.1` | Site ligado à planilha do Google |
 | `v0.7.0` *(planejada)* | App: produtos químicos, registro de serviço, relatório + recibo |
 | `v0.8.0` *(planejada)* | App: retornos automáticos (garantia e próxima aplicação) |
 | `v0.9.0` *(planejada)* | App: assinatura na tela, fotos, checklist de ambientes e cartaz de aviso |
